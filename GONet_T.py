@@ -204,35 +204,6 @@ class FL(chainer.Chain):
         ghf = F.sigmoid(self.l_FL(ls))
         return ghf
 
-class FL(chainer.Chain):
-    def __init__(self, wscale=0.02):
-        initializer = chainer.initializers.Normal(wscale)
-        super(FL, self).__init__(
-            l_img = L.Linear(3*128*128, 10, initialW=initializer),
-            l_dis = L.Linear(512*8*8, 10, initialW=initializer),
-            l_fdis = L.Linear(512*8*8, 10, initialW=initializer),
-            l_LSTM = L.LSTM(30, 30),
-            l_FL = L.Linear(30, 1, initialW=initializer),
-            bnfl = L.BatchNormalization(2048*7*7),
-        )
-    def reset_state(self):
-        self.l_LSTM.reset_state()
-
-    def set_state(self):
-        self.l_LSTM.set_state()
-        
-    def __call__(self, img_error, dis_error, dis_output, test=False):
-        h = F.reshape(F.absolute(img_error), (img_error.data.shape[0], 3*128*128))
-        h = self.l_img(h)
-        g = F.reshape(F.absolute(dis_error), (dis_error.data.shape[0], 512*8*8))
-        g = self.l_dis(g)
-        f = F.reshape(dis_output, (dis_output.data.shape[0], 512*8*8))
-        f = self.l_fdis(f)
-        con = F.concat((h,g,f), axis=1)
-        ls = self.l_LSTM(con)
-        ghf = F.sigmoid(self.l_FL(ls))
-        return ghf
-
 def callback(msg_1):
     global i
     global j
