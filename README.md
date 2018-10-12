@@ -23,16 +23,19 @@ Database
 =================
 
 
-Installation
+How to use GONet
 =================
 
-#### Installation Method
+#### Step1: Choose the method
 
 
-#### System requirements
+#### Step2: Camera Setup
 
 
-#### Download data
+#### Step3: Download
+
+
+#### Step4: Runing GONet
 
 
 Citation
