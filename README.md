@@ -12,7 +12,7 @@ Please see the [website](http://cvgl.stanford.edu/gonet/) (http://cvgl.stanford.
 **["GONet A Semi Supervised Deep Learning Approach For Traversability Estimation"](http://cvgl.stanford.edu/gonet/)**, in **IROS 2018 [Best Paper Award Finalist on Safety, Security, and Rescue Robotics]**.
 
 
-[![Gibson summary video](misc/vid_thumbnail_600.png)](https://youtu.be/KdxuZjemyjc "Click to watch the video summarizing Gibson environment!")
+[![Gibson summary video](misc/vid_thumbnail_600.png)](https://youtu.be/SmVsGQ2-dlM "Click to watch the video summarizing Gibson environment!")
 
 
 Release
