@@ -40,22 +40,23 @@ Citation
 
 If you use GONet's software or database, please cite:
 ```
-@inproceedings{xiazamirhe2018gibsonenv,
-  title={Gibson {Env}: real-world perception for embodied agents},
-  author={Xia, Fei and R. Zamir, Amir and He, Zhi-Yang and Sax, Alexander and Malik, Jitendra and Savarese, Silvio},
-  booktitle={Computer Vision and Pattern Recognition (CVPR), 2018 IEEE Conference on},
+@article{hirose2018gonet,
+  title={GONet: A Semi-Supervised Deep Learning Approach For Traversability Estimation},
+  author={Hirose, Noriaki and Sadeghian, Amir and V{\'a}zquez, Marynel and Goebel, Patrick and Savarese, Silvio},
+  booktitle={Intelligent Robots and Systems (IROS), 2018 IEEE/RSJ International Conference on},
+  pages={3044--3051},
   year={2018},
   organization={IEEE}
 }
 ```
 or
-
 ```
-@inproceedings{xiazamirhe2018gibsonenv,
-  title={Gibson {Env}: real-world perception for embodied agents},
-  author={Xia, Fei and R. Zamir, Amir and He, Zhi-Yang and Sax, Alexander and Malik, Jitendra and Savarese, Silvio},
-  booktitle={Computer Vision and Pattern Recognition (CVPR), 2018 IEEE Conference on},
-  year={2018},
-  organization={IEEE}
+@article{hirose2018gonet,
+  title={GONet: A Semi-Supervised Deep Learning Approach For Traversability Estimation},
+  author={Hirose, Noriaki and Sadeghian, Amir and V{\'a}zquez, Marynel and Goebel, Patrick and Savarese, Silvio},
+  journal={arXiv preprint arXiv:1803.03254},
+  year={2018}
 }
 ```
+
+
