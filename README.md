@@ -5,7 +5,7 @@
 Although our method doesn't need the huge annotated untraversable images, the high accuracy can be achieved by a semi supervised deep learning approach based on GAN(Generative Adversarial Network).
 
 **I.** Needlessness of the huge annotated untraversable images, which is very hard to collect,  
-**II.** Cheaper and stronger estimation than the method using LIDAR, and
+**II.** Cheaper and stronger estimation than the method using LIDAR,   
 **III.** Realease of our new dataset(http://cvgl.stanford.edu/gonet/platform/).
 
 Please see the [website](http://cvgl.stanford.edu/gonet/) (http://cvgl.stanford.edu/gonet/) for more technical details. This repository is intended for distribution of the code and its instruction.
