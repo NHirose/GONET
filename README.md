@@ -1,10 +1,12 @@
 # GONet-A-Semi-Supervised-Deep-Learning-Approach-For-Traversability-Estimation
  
-**Summary**: aaaa
+**Summary**: Safety is one of the most important topics for the real robot in the real environment. GONet can estimate the traversable probability from the fish eye camera image to avoide the collision. Main contributions of our method is followings,
 
-**I.** aaa,  
-**II.** aaa, and  
-**III.** aaa.  
+Although our method doesn't need the huge annotated untraversable images, the high accuracy can be achieved by a semi supervised deep learning approach based on GAN(Generative Adversarial Network).
+
+**I.** Needlessness of the huge annotated untraversable images, which is very hard to collect,  
+**II.** Cheaper and stronger estimation than the method using LIDAR, and
+**III.** Realease of our new dataset(http://cvgl.stanford.edu/gonet/platform/).
 
 Please see the [website](http://cvgl.stanford.edu/gonet/) (http://cvgl.stanford.edu/gonet/) for more technical details. This repository is intended for distribution of the code and its instruction.
 
