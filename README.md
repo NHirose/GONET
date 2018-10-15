@@ -2,12 +2,11 @@
  
 **Summary**: Safety is one of the most important topics for the real robot in the real environment. GONet can estimate the traversable probability from the fish eye camera image to avoide the collision. Main contributions of our method is followings,
 
-Although our method doesn't need the huge annotated untraversable images, the high accuracy can be achieved by a semi supervised deep learning approach based on GAN(Generative Adversarial Network).
-
 **I.** Needlessness of the huge annotated untraversable images, which is very hard to collect,  
-**II.** Cheaper and stronger estimation than the method using LIDAR,   
-**III.** Realease of our new dataset(http://cvgl.stanford.edu/gonet/platform/).
+**II.** Cheaper and stronger estimation than the method using depth information,   
+**III.** Realease of our new dataset(http://cvgl.stanford.edu/gonet/dataset/).
 
+Although our method doesn't need the huge annotated untraversable images, the high accuracy can be achieved by a semi supervised deep learning approach based on GAN(Generative Adversarial Network).
 Please see the [website](http://cvgl.stanford.edu/gonet/) (http://cvgl.stanford.edu/gonet/) for more technical details. This repository is intended for distribution of the code and its instruction.
 
 #### Paper
@@ -17,18 +16,35 @@ Please see the [website](http://cvgl.stanford.edu/gonet/) (http://cvgl.stanford.
 [![GONet summary video](misc/gonet_snapplay.png)](https://youtu.be/SmVsGQ2-dlM "Click to watch the video summarizing Gibson environment!")
 
 
-Release
+System Requirement
 =================
+Ubuntu 16.04
+
+Chainer 4.1.0
+
+Python Pillow 1.1.7
+
+Nvidia GPU
 
 
 Database
 =================
-
+Our dataset "GO Stanford" to train GONet is opened at http://cvgl.stanford.edu/gonet/dataset/.
 
 How to use GONet
 =================
 
 #### Step1: Choose the method
+We have following 4 methods to estimate the traversable probability, depending on your setup. 
+The accuracy in the test dataset is GONet-ts(96.90%) > GONet-s(94.90%) > GONet-t(94.45%) > GONet(92.55%).
+
+GONet.py : core GONet using the monocular vision. We can freely choose the frame rate of GONet.
+
+GONet_T.py : GONet-t using the monocular vision with considering the time consistency by LSTM. We recommend to run GONet-t at 3 fps.
+
+GONet_S.py : GONet-s using the stereo vision. We can freely choose the frame rate of GONet-s.
+
+GONet_TS.py : GONet-ts using the stereo vision with considering the time consistency by LSTM. We recommend to run GONet-ts at 3 fps.
 
 
 #### Step2: Camera Setup
