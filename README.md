@@ -24,6 +24,8 @@ Chainer 4.1.0
 
 Python Pillow 1.1.7
 
+ROS KINETIC(http://wiki.ros.org/kinetic)
+
 Nvidia GPU
 
 
@@ -48,7 +50,8 @@ GONet_TS.py : GONet-ts using the stereo vision with considering the time consist
 
 
 #### Step2: Camera Setup
-
+GONet can only accept the fish eye camera image to capture the environment in front of the robot.
+And, we highly recommend to use RICOH THETA S, because the training and the evaluation of GONet is done by the collected images by RICOH THETA S.(https://theta360.com/en/about/theta/s.html)
 
 #### Step3: Download
 
