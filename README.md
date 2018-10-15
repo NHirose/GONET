@@ -38,7 +38,6 @@ How to use GONet
 
 #### Step1: Choose the method
 We have following 4 options to estimate the traversable probability, depending on your setup. 
-The accuracy in the test dataset is GONet-ts(96.90%) > GONet-s(94.90%) > GONet-t(94.45%) > GONet(92.55%).
 
 GONet.py : core GONet using the monocular vision. We can freely choose the frame rate of GONet.
 
@@ -48,6 +47,7 @@ GONet_S.py : GONet-s using the stereo vision. We can freely choose the frame rat
 
 GONet_TS.py : GONet-ts using the stereo vision with considering the time consistency by LSTM. We recommend to run GONet-ts at 3 fps.
 
+The accuracy in the test dataset is GONet-ts(96.90%) > GONet-s(94.90%) > GONet-t(94.45%) > GONet(92.55%).
 
 #### Step2: Download
 git clone https://github.com/NHirose/GONET.git
