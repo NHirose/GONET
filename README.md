@@ -50,7 +50,7 @@ GONet_TS.py : GONet-ts using the stereo vision with considering the time consist
 
 
 #### Step2: Download
-git clone 
+git clone https://github.com/NHirose/GONET.git
 
 #### Step3: Camera Setup
 GONet can only accept the fish eye camera image to capture the environment in front of the robot.
@@ -64,9 +64,12 @@ To capture the image from RICOH THETA S, we used the open source in ROS, cv_came
 For the core GONet and GONet-t using the monocular vision, the published topic name of the image is "/cv_camera_node/image_raw".
 For the GONet-s and GONet-ts using the stereo vision, the published topic name of the image are "/cv_camera_node1/image_raw" and "/cv_camera_node1/image_raw".
 
-
-
 #### Step5: Runing GONet
+The last process to get the traversable probability is just to run our algorithm.
+
+python GONet???.py
+
+The published topic for the traversable probablity is "out_GONet".
 
 
 Citation
