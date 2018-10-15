@@ -55,7 +55,7 @@ git clone https://github.com/NHirose/GONET.git
 #### Step3: Camera Setup
 GONet can only accept the fish eye camera image to capture the environment in front of the robot.
 And, we highly recommend to use RICOH THETA S, because the training and the evaluation of GONet are done by the collected images by RICOH THETA S.(https://theta360.com/en/about/theta/s.html)
-Please put the camera in front of your device(robot) at the height ?? m not to caputure your device itself and connect with your PC with USB cable. The distance of two cameras can be 0.115 m, if you would like to apply GONet-s or GONet-ts using the stereo vision.
+Please put the camera in front of your device(robot) at the height 0.460 m not to caputure your device itself and connect with your PC with USB cable. The distance of two cameras can be 0.115 m, if you would like to apply GONet-s or GONet-ts using the stereo vision.
 
 #### Step4: Image Capturing
 To turn on RICOH THETA S as the live streaming mode, please hold the bottom buttom at side for about 5 senconds and push the top buttom.(Detail is shown in the instrunction sheet of RICOH THETA.)
