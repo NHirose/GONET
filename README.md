@@ -37,7 +37,7 @@ How to use GONet
 =================
 
 #### Step1: Choose the method
-We have following 4 methods to estimate the traversable probability, depending on your setup. 
+We have following 4 options to estimate the traversable probability, depending on your setup. 
 The accuracy in the test dataset is GONet-ts(96.90%) > GONet-s(94.90%) > GONet-t(94.45%) > GONet(92.55%).
 
 GONet.py : core GONet using the monocular vision. We can freely choose the frame rate of GONet.
