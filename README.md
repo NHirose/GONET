@@ -1,4 +1,4 @@
-# GONet-A-Semi-Supervised-Deep-Learning-Approach-For-Traversability-Estimation
+# GONet: A Semi Supervised Deep Learning Approach For Traversability Estimation
  
 **Summary**: Safety is one of the most important topics for the real robot in the real environment. GONet can estimate the traversable probability from the fish eye camera image to avoide the collision. Main contributions of our method is followings,
 
