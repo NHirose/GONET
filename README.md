@@ -69,7 +69,7 @@ The last process to get the traversable probability is just to run our algorithm
 
 python GONet???.py
 
-The published topic name for the traversable probablity is "out_GONet".
+The published topic name for the traversable probability is "out_GONet".
 
 
 Citation
